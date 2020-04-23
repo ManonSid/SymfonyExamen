@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1 style="text-align:center; color:blue"><b>{{ enseigne }}</b></h1>
+<h3 style="text-align:center"><i>Bienvenue sur votre gestionnaire de projets/tâches</i></h3>
+<hr>
+<form action="{{ path('manager_register') }}" method="post">
+        <label><b>Username</b></label>
+        <input type="text" name="username">
+        <label><b>Password</b></label>
+        <input type="submit" value="Valider">
+    </form>
+{% endblock %}
